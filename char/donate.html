@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate | Charity Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html">
+          <img src="logo.svg" alt="Charity Organisation Logo" class="logo">
+          <span>Charity Foundation</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="donate.html">Donate</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <a class="btn btn-primary" href="donate.html">Donate Now</a>
+      </nav>
+    </header>
+
+    <main class="container section donate-layout">
+      <!-- Contact Bar for Mobile -->
+      <section class="contact-bar">
+        <a href="tel:+256757609991" class="contact-link phone-link">
+          <i class="fas fa-phone"></i>
+          <span>Call: +256 757 609 991</span>
+        </a>
+        <a href="mailto:charityorg256@gmail.com" class="contact-link email-link">
+          <i class="fas fa-envelope"></i>
+          <span>Email: charityorg256@gmail.com</span>
+        </a>
+      </section>
+
+      <section class="card form-card">
+        <h1>Make a secure donation</h1>
+        <p>Support the mission with a one-time gift or recurring giving plan.</p>
+
+        <!-- Mobile Money Quick Payment -->
+        <div class="mobile-money-section">
+          <h2><i class="fas fa-mobile-alt"></i> Donate via Mobile Money</h2>
+          <p class="subtitle">Quick & Easy - Send money directly to our mobile money account</p>
+          
+          <div class="payment-methods">
+            <div class="payment-method-card">
+              <div class="method-icon"><i class="fab fa-mobile"></i></div>
+              <h3>MTN Mobile Money</h3>
+              <div class="account-details">
+                <p><strong>Account Number:</strong></p>
+                <p class="account-number">+256 757 609 991</p>
+                <button type="button" class="copy-btn" data-text="+256757609991">Copy Number</button>
+              </div>
+              <ol class="steps">
+                <li>Dial <strong>*165#</strong> on your MTN phone</li>
+                <li>Select "Send Money"</li>
+                <li>Enter: <strong>0757609991</strong></li>
+                <li>Enter your amount</li>
+                <li>Confirm with your PIN</li>
+              </ol>
+            </div>
+
+            <div class="payment-method-card">
+              <div class="method-icon"><i class="fas fa-mobile-alt"></i></div>
+              <h3>Airtel Money</h3>
+              <div class="account-details">
+                <p><strong>Account Number:</strong></p>
+                <p class="account-number">+256 757 609 991</p>
+                <button type="button" class="copy-btn" data-text="+256757609991">Copy Number</button>
+              </div>
+              <ol class="steps">
+                <li>Dial <strong>*185#</strong> on your Airtel phone</li>
+                <li>Select "Send Money"</li>
+                <li>Enter: <strong>0757609991</strong></li>
+                <li>Enter your amount</li>
+                <li>Confirm with your PIN</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <strong><i class="fas fa-info-circle"></i> Important:</strong> After donating via mobile money, please email <strong>charityorg256@gmail.com</strong> with your:
+            <ul>
+              <li>Transaction ID/Reference Number</li>
+              <li>Amount sent</li>
+              <li>Your full name</li>
+            </ul>
+            This helps us send you a receipt and thank you message.
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="form-divider">
+          <span>OR</span>
+        </div>
+
+        <form id="donationForm">
+          <fieldset>
+            <legend>Donation Type</legend>
+            <label><input type="radio" name="donationType" value="One-Time" checked /> One-Time Donation</label>
+            <label><input type="radio" name="donationType" value="Monthly" /> Monthly Recurring Donation</label>
+            <label><input type="radio" name="donationType" value="Weekly" /> Weekly Donation</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Donation Amount</legend>
+            <div class="amount-buttons">
+              <button type="button" class="amount-chip" data-amount="10">$10</button>
+              <button type="button" class="amount-chip" data-amount="25">$25</button>
+              <button type="button" class="amount-chip" data-amount="50">$50</button>
+              <button type="button" class="amount-chip" data-amount="100">$100</button>
+            </div>
+            <label class="field">
+              <span>Custom Amount</span>
+              <input type="number" id="customAmount" min="1" placeholder="Enter amount" />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Donor Details</legend>
+            <label class="field">
+              <span>Full Name</span>
+              <input type="text" name="fullName" required />
+            </label>
+            <label class="field">
+              <span>Email Address</span>
+              <input type="email" name="email" required />
+            </label>
+            <label class="field">
+              <span>Phone Number</span>
+              <input type="tel" name="phone" required />
+            </label>
+            <label class="field">
+              <span>Country</span>
+              <input type="text" name="country" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment Methods</legend>
+            <div class="payment-options">
+              <label><input type="checkbox" name="payments" value="Card" /> Credit/Debit Cards</label>
+              <label><input type="checkbox" name="payments" value="PayPal" /> PayPal</label>
+              <label><input type="checkbox" name="payments" value="Mobile Money" /> Mobile Money</label>
+              <label><input type="checkbox" name="payments" value="Bank Transfer" /> Bank Transfer</label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-primary full-width" type="submit">❤️ Donate Securely</button>
+        </form>
+      </section>
+
+      <aside class="card share-card">
+        <h2><i class="fas fa-handshake"></i> Connect With Us</h2>
+        <p>Share our mission or reach us directly through your preferred channel.</p>
+        
+        <div class="contact-section">
+          <h3>Direct Contact</h3>
+          <div class="contact-options">
+            <a href="tel:+256757609991" class="contact-option">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Call Now</strong>
+                <p>+256 757 609 991</p>
+              </div>
+            </a>
+            <a href="mailto:charityorg256@gmail.com" class="contact-option">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email Us</strong>
+                <p>charityorg256@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="share-section">
+          <h3>Share Our Mission</h3>
+          <div class="share-actions">
+            <a class="btn btn-secondary share-btn" href="https://wa.me/?text=Support%20our%20charity%20mission!%20Your%20donation%20can%20change%20someone's%20life.%20Help%20us%20serve%20vulnerable%20families.%20Contact:%20charityorg256@gmail.com%20or%20Call:%20+256757609991" target="_blank" rel="noreferrer">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a class="btn btn-secondary share-btn" href="https://www.facebook.com/sharer/sharer.php?u=charityorg256@gmail.com" target="_blank" rel="noreferrer">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a class="btn btn-secondary share-btn" href="mailto:?subject=Support%20Our%20Charity%20Mission&body=Hello,%0A%0AI wanted to share with you an opportunity to support our charity mission.%0A%0AContact:%20charityorg256@gmail.com%0APhone:%20+256%20757%20609%20991%0A%0AWe are helping vulnerable families and making a real difference in our community.%0A%0AThank%20you!">
+              <i class="fas fa-envelope"></i> Email Friend
+            </a>
+          </div>
+        </div>
+
+        <div class="link-box">
+          <strong><i class="fas fa-link"></i> Our Contact</strong>
+          <p>Email: charityorg256@gmail.com</p>
+          <p>Phone: +256 757 609 991</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3> Charity Foundation organization</h3>
+          <p>Secure donations and transparent impact reporting.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="donate.html">Donation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:charityorg256@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
+            <li><a href="tel:+256757609991"><i class="fas fa-phone"></i> Call: +256 757 609 991</a></li>
+            <li><a href="donate.html"><i class="fas fa-heart"></i> Donate Securely</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://wa.me/?text=Support%20our%20charity%20mission" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="mailto:charityorg256@gmail.com"><i class="fas fa-envelope"></i> Share Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle background -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#2b8a3e" stroke-width="12"/>
+  
+  <!-- Left wheat/grain -->
+  <g fill="#6b5d3f">
+    <path d="M 140 280 Q 130 260 135 240 Q 140 260 138 280"/>
+    <path d="M 150 290 Q 138 270 145 250 Q 152 270 148 290"/>
+    <path d="M 160 295 Q 148 275 156 255 Q 163 275 159 295"/>
+    <ellipse cx="145" cy="310" rx="8" ry="15" fill="#6b5d3f"/>
+  </g>
+  
+  <!-- Right plant/leaves -->
+  <g fill="#2b8a3e">
+    <path d="M 260 320 Q 270 280 280 250 Q 275 280 265 310"/>
+    <path d="M 275 310 Q 285 270 295 240 Q 288 270 278 305"/>
+    <ellipse cx="270" cy="230" rx="12" ry="20" fill="#2b8a3e"/>
+    <ellipse cx="285" cy="220" rx="12" ry="20" fill="#2b8a3e"/>
+  </g>
+  
+  <!-- Cross (brown) -->
+  <g fill="#5a3a1a">
+    <rect x="180" y="120" width="40" height="160" rx="3"/>
+    <rect x="120" y="180" width="160" height="40" rx="3"/>
+  </g>
+  
+  <!-- Light rays behind cross -->
+  <g stroke="#d4c5a9" stroke-width="2" opacity="0.6">
+    <line x1="200" y1="80" x2="200" y2="40"/>
+    <line x1="235" y1="95" x2="260" y2="70"/>
+    <line x1="165" y1="95" x2="140" y2="70"/>
+    <line x1="240" y1="140" x2="275" y2="140"/>
+    <line x1="160" y1="140" x2="125" y2="140"/>
+  </g>
+  
+  <!-- Field/waves bottom -->
+  <g fill="none" stroke="#2b8a3e" stroke-width="8" opacity="0.8">
+    <path d="M 100 330 Q 130 310 160 330 T 220 330 T 280 330 T 340 330"/>
+    <path d="M 90 360 Q 120 340 150 360 T 210 360 T 270 360 T 330 360"/>
+  </g>
+  
+  <!-- Helping hand -->
+  <g fill="#6b5d3f">
+    <ellipse cx="120" cy="380" rx="25" ry="35" transform="rotate(-20 120 380)"/>
+    <circle cx="90" cy="365" r="6"/>
+    <circle cx="100" cy="350" r="6"/>
+    <circle cx="115" cy="345" r="6"/>
+    <circle cx="130" cy="350" r="6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="430" font-family="Georgia, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#1f2937">
+    CHARITY ORGANISATION
+  </text>
+  <text x="200" y="460" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#5f6b7a" letter-spacing="2">
+    FAITH IN ACTION, HOPE IN EVERY HARVEST
+  </text>
+</svg>

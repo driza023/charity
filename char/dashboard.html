@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donor Dashboard | Hope Foundation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html">
+          <img src="logo.svg" alt="Charity Organisation Logo" class="logo">
+          <span>Hope Foundation</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="donate.html">Donate</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <a class="btn btn-primary" href="donate.html">Donate Now</a>
+      </nav>
+    </header>
+
+    <main class="container section">
+      <div class="section-heading">
+        <p class="eyebrow">Admin dashboard</p>
+        <h1>Monitor donations, donors, and campaign progress</h1>
+      </div>
+      <div class="stats-grid dashboard-stats">
+        <div class="stat-card">
+          <strong>$50,000</strong>
+          <span>Total Donations</span>
+        </div>
+        <div class="stat-card">
+          <strong>$8,500</strong>
+          <span>Monthly Donations</span>
+        </div>
+        <div class="stat-card">
+          <strong>1,250</strong>
+          <span>Total Donors</span>
+        </div>
+        <div class="stat-card">
+          <strong>350</strong>
+          <span>Recurring Supporters</span>
+        </div>
+      </div>
+
+      <div class="card dashboard-card">
+        <div class="dashboard-actions">
+          <h2>Donation Management</h2>
+          <div>
+            <button class="btn btn-secondary" id="reportButton">Generate Report</button>
+            <button class="btn btn-secondary" id="emailButton">Send Thank-You Email</button>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Donor</th>
+              <th>Amount</th>
+              <th>Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Sarah M.</td><td>$100</td><td>Monthly</td><td>Completed</td></tr>
+            <tr><td>Emmanuel K.</td><td>$25</td><td>One-Time</td><td>Completed</td></tr>
+            <tr><td>Grace N.</td><td>$50</td><td>Weekly</td><td>Pending</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Hope Foundation Church Charity</h3>
+          <p>Smart dashboards for transparent stewardship.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="donate.html">Donation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:charityorg256@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
+            <li><a href="tel:+256757609991"><i class="fas fa-phone"></i> Call: +256 757 609 991</a></li>
+            <li><a href="donate.html"><i class="fas fa-heart"></i> Donate Securely</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://wa.me/?text=Support%20our%20charity%20mission" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="mailto:charityorg256@gmail.com"><i class="fas fa-envelope"></i> Share Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
